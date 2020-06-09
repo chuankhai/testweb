@@ -31,7 +31,7 @@
 
 if (!$conn)
 {
- die("Error connection: ".sqlsrv_errors(),true);
+ die(print_r(sqlsrv_errors(),true));
  }
 
  $tsql= "SELECT * FROM [dbo].[restaurant]";
