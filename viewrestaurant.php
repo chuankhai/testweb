@@ -31,7 +31,7 @@
 
 if (!$conn)
 {
- die(print_r(sqlsrv_errors(),true));
+ die(print_r(sqlsrv_errors()));
  }
 
  $tsql= "SELECT * FROM [dbo].[restaurant]";
@@ -39,7 +39,7 @@ if (!$conn)
 
 if ($getResults == FALSE)
 {
- die(sqlsrv_errors());
+ die(print_r(sqlsrv_errors()));
 }
 
  while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC))
