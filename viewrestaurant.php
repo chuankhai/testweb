@@ -23,7 +23,7 @@
  $serverName = "testservertp048092.database.windows.net";
  $connectionOptions = array(
  "Database" => "testdbtp048092",
- "Uid" => "testserver",
+ "UID" => "testserver",
 "PWD" => "Tp048092");
 
 //Establishes the connection
