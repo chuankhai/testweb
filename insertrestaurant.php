@@ -13,7 +13,7 @@ if (!$conn)
  die(print_r(sqlsrv_errors()));
  }
 
-$sql = "INSERT INTO [dbo].[restaurant] (restaurant_name,restaurant_adress,restaurant_phone) VALUES (:0,:1,:2)";
+$sql = "INSERT INTO [dbo].[restaurant] (restaurant_name,restaurant_adress,restaurant_phone) VALUES (?,?,?)";
 $params = array("Test restaurant","Bukit Jalil","0123456678");
 
 $exe = sqlsrv_query($conn,$sql,$params);
